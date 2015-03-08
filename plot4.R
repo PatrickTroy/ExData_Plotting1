@@ -25,7 +25,7 @@ plot4<-function(){
         png("plot4.png", width = 480, height = 480)
         ##specify a square grid of 4 plots. These will fill column-wise
         par(mfcol = c(2,2))
-        with(dataforplot1,plot(DateTime,Global_active_power,type="l",xlab = "",ylab = "Global Active Power (kilowatts)"))
+        with(dataforplot1,plot(DateTime,Global_active_power,type="l",xlab = "",ylab = "Global Active Power"))
                 
         with(dataforplot2,{
                 plot(DateTime,Sub_metering_1,type="l",col = "black",xlab = "",ylab = "Energy sub metering")
